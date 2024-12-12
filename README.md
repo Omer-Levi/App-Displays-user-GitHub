@@ -1,1 +1,1 @@
-# App-Displays-user-GitHub
+# App Displays user information from GitHub

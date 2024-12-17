@@ -1,0 +1,11 @@
+body {
+    margin: 10px;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+#card {
+    background-color: rgb(211, 211, 211);
+  }

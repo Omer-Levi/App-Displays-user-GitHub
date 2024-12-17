@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import '../style/Search.css'
 
 type propsInfo = {
     onSearch: (user: string) => void;
@@ -20,14 +19,14 @@ function Search(props: propsInfo):JSX.Element{
         }
     }
     
-
-    
-    
     return(
         <div>
-            <TextField onChange={changeHandler} id="filled-basic" label="Please type user name in GitHub" variant="filled" />
-            <hr />
-            <Button variant="contained" onClick={clickHandler}>Submit</Button>
+            <div id="search">
+            <input onChange={changeHandler} id="search" type="search" placeholder="Please type user name in GitHub"></input>
+            </div>
+            <div>
+            <button onClick={clickHandler} id="search">Submit</button>
+            </div>
         </div>
     )
 }
